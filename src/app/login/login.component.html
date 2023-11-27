@@ -1,0 +1,43 @@
+<p-toast></p-toast>
+<div class="body-login">
+    <div class="contenedor">
+        <p-card class="box fadein shadow-8">
+            <div>
+                <img src="assets/icon.png" alt="Logo Empresa" class="logo">
+                <h2 class="title">Vales</h2>
+            </div>
+            <div>
+                <span class="p-float-label w-full mb-3 mt-2">
+                    <input type="text" pInputText [(ngModel)]="user.userName " id="user" class="w-full">
+                    <label for="user">Usuario</label>
+                </span>
+                <span class="p-float-label p-input-icon-right w-full mb-3 mt-2">
+                    <i class="pi" [ngClass]="{'pi-eye': showPassword, 'pi-eye-slash': !showPassword}"
+                        (click)="toggleShowPassword()"></i>
+                    <input [type]="(showPassword) ? 'text':'password'" pInputText [(ngModel)]="user.password"
+                        class="w-full" (keyup.enter)="verificarCredencial()">
+                    <label>Contraseña</label>
+                </span>
+            </div>
+
+            <div class="text-center mt-4 ">
+                <button pButton type="button" class="p-button-raised w-full btn-logout" label="Iniciar Sesión"
+                    (click)="verificarCredencial()" icon="fa-sharp fa-solid fa-right-to-bracket"
+                    [loading]="cargandoData">
+                </button>
+            </div>
+        </p-card>
+
+        <!-- <p-card class="box fadein shadow-8" *ngIf="sedes.dataCargada">
+            <div *ngIf="sedes.roll == ''">
+                <h2>Select Roll</h2>
+            </div>
+            <div *ngIf="sedes.roll != '' && !cargandoData">
+                <h2 class="mt-0 text-center">Select Sede</h2>
+                <p-listbox [options]="sedes.sedesEstudiante" optionLabel="nombre"
+                    (onChange)="selectSede($event)"></p-listbox>
+            </div>
+            <p-progressSpinner class="text-center block m-auto" *ngIf="cargandoData"></p-progressSpinner>
+        </p-card> -->
+    </div>
+</div>

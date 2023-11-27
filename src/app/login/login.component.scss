@@ -1,0 +1,89 @@
+.btn-logout {
+
+    // background-color: rgb(243, 59, 0) !important;
+    background-color: #D82B2F;
+    color: white !important;
+}
+
+:host {
+
+    ::ng-deep .p-button:enabled:hover {
+        background: rgb(218 159 159 / 92%) !important;
+        color: #ffffff;
+        border-color: transparent;
+    }
+
+}
+
+
+
+.body-login {
+    // background-color: rgb(26 62 112);
+    background: linear-gradient(to top, #F3C226 0%, #D82B2F 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+.p-button:enabled:hover {
+    background: #D82B2F;
+}
+
+//checkbox de recuerdame
+:host {
+    ::ng-deep .p-checkbox .p-checkbox-box.p-highlight {
+        border-color: rgb(243, 194, 37);
+        background: rgb(243, 194, 37);
+    }
+
+    ::ng-deep .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-highlight:hover {
+        border-color: rgb(243, 194, 37);
+        background: rgb(243, 194, 37);
+    }
+}
+
+
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    width: 500px;
+    margin: auto 10px;
+}
+
+.box>div {
+    padding: 0 30px;
+}
+
+.title {
+    // color: rgb(0, 70, 134);
+    color: #D82B2F;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 0;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    margin: 0px auto 10px auto;
+    display: block;
+}
+
+i {
+    cursor: pointer;
+}
+
+.upds_logo {
+    height: 20px;
+    aspect-ratio: 1 / 1;
+}
